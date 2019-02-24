@@ -1,0 +1,14 @@
+{
+  "name": "ng-component-strategy",
+  "version": "0.0.1",
+  "description": "not supposed to serve a role of library, mostly an example",
+  "main": "index.ts",
+  "author": "tanfonto",
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/core": "^7.2.6"
+  },
+  "devDependencies": {
+    "typescript": "^3.3.3333"
+  }
+}
