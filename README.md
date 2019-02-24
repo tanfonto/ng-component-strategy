@@ -10,7 +10,7 @@ Architecting some Angular-based systems I had a chance to experiment and verify 
 
 fit into real world scenarios and found all of them lacking.
 
-Metaprogramming is great but it can become a hell to implement if you want to do it right (as in corner cases) plus the typing support it offers is very limited if you're not willing to produce additional boilerplate. Inheritance is known to be kind of a 'last resort' technique for a reason and fp-like composition has a very limited (yet time-consuming) application in Angular because of classes, decorators and
+Metaprogramming is great but it can become a hell to implement if you want to do it right (read: corner cases) plus the typing support it offers is very limited if you're not willing to produce additional boilerplate. Inheritance is known to be kind of a 'last resort' technique for a reason and fp-like composition has a very limited (yet time-consuming) application in Angular because of classes, decorators and
 OO ideology in general.
 
 This repo is an example of what I currently perceive a 'golden path' for common component design.
@@ -26,7 +26,7 @@ interface IComponentStrategy<T extends object = object> {
 }
 ```
 
-ensure [the service that implements it](./common-strategy.ts) consumes whatever component-level dependencies it may need and by scoping it to component level providers section (see how [strategyProvider](./strategy-provider.ts) is used by the [standardizedComponent](./standardized-component.ts)) and inject it into the actual component.
+ensure [the service that implements it](./common-strategy.ts) consumes whatever component-level dependencies it may need by scoping it to component level providers section (see how [strategyProvider](./strategy-provider.ts) is used by the [standardizedComponent](./standardized-component.ts)) and inject it into the actual component.
 
 What do I gain:
 
