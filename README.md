@@ -38,4 +38,4 @@ What do I gain:
 
 What do I lose:
 
-- Explicit component signature (this is where [marker interface]('./interfaces.ts') is supposed to jump in);
+- Explicit component signature (this is where [marker interface](./interfaces.ts) is supposed to jump in);
